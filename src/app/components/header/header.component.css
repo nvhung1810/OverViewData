@@ -1,0 +1,27 @@
+.nav_weight {
+    font-weight: 500;
+}
+
+.nav-primary-color {
+    background-color: #6E4864;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.btn-outline {
+    background-color: #fff;
+}
+
+.active-click {
+    color: #15888E;
+}
+
+.img {
+    width: 20px;
+}

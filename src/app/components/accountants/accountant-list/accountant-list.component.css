@@ -36,3 +36,8 @@
 .table-background {
     background-color: #CCE8FF;
 }
+
+.txt-time {
+    text-align: left;
+    padding-left: 34px;
+}

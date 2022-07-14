@@ -9,4 +9,5 @@ export class Accountant {
     public money: number;
     public exchange_rate: number;
     public total: number;
+    public data: any[];
 }

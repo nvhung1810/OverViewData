@@ -20,9 +20,10 @@ export class LaythongtinService {
     return this.http.get<Accountant[]>(this.url);
   }
 
-  getAllTimeandTotal(): Observable<fullTimeandTotalMoney[]>  {
-    return this.http.get<fullTimeandTotalMoney[]>(this.urlfullTime);
+  getProduct(id: number): Observable<Accountant> {
+    const UrlAPI = `${this.url}/${id}`;
+    return this.http.get<Accountant>(UrlAPI);
+
   }
 
-  
 }

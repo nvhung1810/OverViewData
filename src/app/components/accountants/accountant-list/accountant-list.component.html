@@ -25,21 +25,21 @@
       <!--Table head-->
 
       <!--Table body-->
-      <tbody *ngFor="let item of _Accountant; let i = index">
+      <tbody *ngFor="let item of _Accountant">
         <tr>
-          <td class="editTable1 table-background" colspan="6">{{item.fulldate}}</td>
-          <td class="editTable1 table-background">{{item.total}}</td>
+          <td class="editTable1 table-background txt-time" colspan="6">{{item.fulldate}}</td>
+          <th class="editTable1 table-background"></th>
           <td class="editTable1 table-background"></td>
         </tr>
-        <tr *ngIf="i > 0">
-          <th class="editTable1">{{i}}</th>
-          <td class="editTable1">{{item.date}}</td>
-          <td class="editTable1">{{item.number}}</td>
-          <td class="editTable1">{{item.explain}}</td>
-          <td class="editTable1">{{item.debt}}</td>
-          <td class="editTable1">{{item.have}}</td>
-          <td class="editTable1">{{item.money}}</td>
-          <td class="editTable1">{{item.exchange_rate}}</td>
+        <tr *ngFor="let value of item.data; let i = index">
+          <th class="editTable1">{{i+1}}</th>
+          <td class="editTable1">{{value.date}}</td>
+          <td class="editTable1">{{value.number}}</td>
+          <td class="editTable1">{{value.explain}}</td>
+          <td class="editTable1">{{value.debt}}</td>
+          <td class="editTable1">{{value.have}}</td>
+          <td class="editTable1">{{value.money | number: '1.0-3'}}</td>
+          <td class="editTable1">{{value.exchange_rate}}</td>
         </tr>
       </tbody>
       <!--Table body-->

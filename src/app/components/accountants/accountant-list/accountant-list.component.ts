@@ -13,6 +13,7 @@ export class AccountantListComponent implements OnInit, OnDestroy {
 
   public _Subscription: Subscription;
   public _Accountant: Accountant[] = [];
+  public _AccountantValue: Accountant[] = [];
   public _fullTimeandTotalMoney: fullTimeandTotalMoney[] = [];
 
   constructor(
@@ -21,7 +22,6 @@ export class AccountantListComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.onGetValue();
-    // this.onGetDate();
   }
 
   onGetValue() {
@@ -29,20 +29,6 @@ export class AccountantListComponent implements OnInit, OnDestroy {
       this._Accountant = data;
       console.log(this._Accountant);
     })
-  }
-
-    // onGetDate() {
-    //   this._Subscription = this._LaythongtinService.getAllTimeandTotal().subscribe((data: fullTimeandTotalMoney[]) => {
-    //     this._fullTimeandTotalMoney = data;
-    //     console.log(this._fullTimeandTotalMoney);
-    //   })
-    // }
-
-
-  onHadel() {
-    for(var i = 0; i < this._Accountant.length; i++) {
-      console.log(i);
-    }
   }
 
   ngOnDestroy(): void {

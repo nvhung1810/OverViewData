@@ -6,13 +6,12 @@ import { AccountantListComponent } from './components/accountants/accountant-lis
 
 // 
 import { Routes, RouterModule } from '@angular/router';
-import { AccountantHomeComponent } from './components/accountants/accountant-home/accountant-home.component';
 import { HttpClientModule } from '@angular/common/http';
 
 export const appRouters: Routes = [
     {
         path: '',
-        component: AccountantHomeComponent
+        component: AccountantListComponent
     },
     {
         path: 'accountants',

@@ -12,7 +12,6 @@ import { AccountantListComponent } from './components/accountants/accountant-lis
 
 // 
 import { Routes, RouterModule } from '@angular/router';
-import { AccountantHomeComponent } from './components/accountants/accountant-home/accountant-home.component';
 import { appRouters } from './app.router';
 import { LaythongtinService } from './service/laythongtin.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -26,7 +25,6 @@ import { HttpClientModule } from '@angular/common/http';
     AccountantCreateComponent,
     AccountantEditComponent,
     AccountantListComponent,
-    AccountantHomeComponent
   ],
 
   imports: [

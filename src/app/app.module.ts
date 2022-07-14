@@ -10,6 +10,13 @@ import { AccountantCreateComponent } from './components/accountants/accountant-c
 import { AccountantEditComponent } from './components/accountants/accountant-edit/accountant-edit.component';
 import { AccountantListComponent } from './components/accountants/accountant-list/accountant-list.component';
 
+// 
+import { Routes, RouterModule } from '@angular/router';
+import { AccountantHomeComponent } from './components/accountants/accountant-home/accountant-home.component';
+import { appRouters } from './app.router';
+import { LaythongtinService } from './service/laythongtin.service';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +25,19 @@ import { AccountantListComponent } from './components/accountants/accountant-lis
     AccountantViewComponent,
     AccountantCreateComponent,
     AccountantEditComponent,
-    AccountantListComponent
+    AccountantListComponent,
+    AccountantHomeComponent
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRouters),
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    LaythongtinService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-<p class="txt_account">accounting information</p>
+<p class="txt_account">Accounting Information</p>
 <button type="button" class="btn btn-primary btn-create" data-toggle="button" aria-pressed="false" autocomplete="off">CREATE</button>
 <section>
 <div class="table-responsive text-nowrap">
@@ -25,21 +25,21 @@
       <!--Table head-->
 
       <!--Table body-->
-      <tbody>
+      <tbody *ngFor="let item of _Accountant; let i = index">
         <tr>
-            <th  colspan="6" class="editTable txt_date">Ngày: 01/01/2021</th>
-            <td  class="editTable txt_date">384775000</td>
-            <td  class="editTable txt_date"></td>
+          <td class="editTable1 table-background" colspan="6">{{item.fulldate}}</td>
+          <td class="editTable1 table-background">{{item.total}}</td>
+          <td class="editTable1 table-background"></td>
         </tr>
-        <tr>
-          <th class="editTable1">1</th>
-          <td class="editTable1">Kate</td>
-          <td class="editTable1">Moss</td>
-          <td class="editTable1">USA / The United Kingdom / China / Russia </td>
-          <td class="editTable1">anbc</td>
-          <td class="editTable1">adf</td>
-          <td class="editTable1">23</td>
-          <td class="editTable1">23</td>
+        <tr *ngIf="i > 0">
+          <th class="editTable1">{{i}}</th>
+          <td class="editTable1">{{item.date}}</td>
+          <td class="editTable1">{{item.number}}</td>
+          <td class="editTable1">{{item.explain}}</td>
+          <td class="editTable1">{{item.debt}}</td>
+          <td class="editTable1">{{item.have}}</td>
+          <td class="editTable1">{{item.money}}</td>
+          <td class="editTable1">{{item.exchange_rate}}</td>
         </tr>
       </tbody>
       <!--Table body-->

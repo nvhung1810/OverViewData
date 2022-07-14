@@ -11,6 +11,7 @@
     vertical-align: middle;
     border: 2px solid #DEE2E6;
     padding: 0;
+    /* background-color: #fff; */
 }
 
 .txt_date {
@@ -30,4 +31,8 @@
     font-weight: 500;
     font-size: 24px;
     padding: 20px 0 0 24px;
+}
+
+.table-background {
+    background-color: #CCE8FF;
 }

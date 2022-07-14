@@ -10,14 +10,15 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link active-click" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLinkActive="active-click" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/']">
+          Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Kế Toán</a>
+        <a class="nav-link" routerLinkActive="active-click" [routerLink]="['/accountants']">Kế Toán</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Hóa Đơn</a>
-      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active-click" [routerLink]="['']" >Hóa Đơn</a>
+      </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2 form-s" type="search" placeholder="Search" aria-label="Search">

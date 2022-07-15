@@ -1,5 +1,16 @@
-<p class="txt_account">Accounting Information</p>
-<button type="button" class="btn btn-primary btn-create" data-toggle="button" aria-pressed="false" autocomplete="off">CREATE</button>
+<p class="txt_account animate__fadeInDown">Accounting Information</p>
+<div class="nav">
+  <button type="button" class="btn btn-primary btn-create" data-toggle="button" aria-pressed="false" autocomplete="off">CREATE</button>
+  <!--  -->
+  <div class="abc col-md-1">
+    <select class="custom-select">
+      <option selected>Filter</option>
+      <option value="1">Tăng Dần</option>
+      <option value="2">Giảm Dần</option>
+    </select>
+  </div>
+  <!--  -->
+</div>
 <section>
 <div class="table-responsive text-nowrap">
     <!--Table-->
@@ -8,7 +19,7 @@
       <!--Table head-->
       <thead>
         <tr>
-            <th rowspan="2" class="editTable"></th>
+            <th rowspan="2" class="editTable col-min"></th>
             <th colspan="2" class="editTable">Chứng Từ</th>
             <th rowspan="2" class="editTable">Diễn Giải</th>
             <th colspan="2" class="editTable">Tài Khoản</th>
@@ -21,17 +32,47 @@
             <th class="editTable col-md-1">Nợ</th>
             <th class="editTable col-md-1">Có</th>
         </tr>
+        <tr>
+          <th rowspan="2" class="editTable"></th>
+          <th colspan="1" class="editTable col-md-1">
+            <input type="text" class="form-control" id="dateFilter" type="text" [(ngModel)]="dateFilter">
+          </th>
+          <th colspan="1" class="editTable col-md-1">
+            <input type="text" class="form-control" id="name"  type="text" [(ngModel)]="numberFilter">
+          </th>
+          <th rowspan="2" class="editTable col-md-6">
+            <input type="text" class="form-control" id="name"  type="text" [(ngModel)]="explainFilter">
+          </th>
+          <th colspan="1" class="editTable col-md-1">
+            <input type="text" class="form-control" id="name" type="text" [(ngModel)]="debtFilter">
+          </th>
+          <th colspan="1" class="editTable col-md-1">
+            <input type="text" class="form-control" id="name" type="text" [(ngModel)]="haveFilter"> 
+          </th>
+          <th rowspan="2" class="editTable col-md-1">
+            <input type="text" class="form-control" id="name" type="text" [(ngModel)]="moneyFilter">
+          </th>
+          <th rowspan="2" class="editTable col-md-1">
+            <input type="text" class="form-control" id="name"  type="text" [(ngModel)]="exchange_rateFilter" >
+          </th>
+      </tr>
       </thead>
+      
       <!--Table head-->
 
       <!--Table body-->
-      <tbody *ngFor="let item of _Accountant">
+      <tbody *ngFor="let item of _Accountant" class="animate__animated animate__fadeInDown">
         <tr>
-          <td class="editTable1 table-background txt-time" colspan="6">{{item.fulldate}}</td>
+          <td class="editTable1 table-background txt-time" colspan="6">
+            <i class="fa-solid fa-angle-right"></i>
+            {{item.fulldate}}
+          </td>
           <th class="editTable1 table-background"></th>
           <td class="editTable1 table-background"></td>
         </tr>
-        <tr *ngFor="let value of item.data; let i = index">
+        <tr *ngFor="let value of item.data | filterAcc : dateFilter :
+            numberFilter : explainFilter : debtFilter :
+            haveFilter : moneyFilter : exchange_rateFilter ; let i = index ">
           <th class="editTable1">{{i+1}}</th>
           <td class="editTable1">{{value.date}}</td>
           <td class="editTable1">{{value.number}}</td>

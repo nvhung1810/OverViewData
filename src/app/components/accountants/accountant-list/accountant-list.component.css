@@ -41,3 +41,30 @@
     text-align: left;
     padding-left: 34px;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.in-edit {
+    width: 100%;
+}
+
+
+.navbar-edit {
+    max-width: 350px;
+}
+.col-min {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 2.333333%;
+    flex: 0 0 2.333333%;
+    max-width: 2.333333%;
+}
+
+.btn-group-fix {
+    margin: 24px 54px 24px 24px;
+}

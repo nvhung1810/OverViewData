@@ -9,12 +9,22 @@ import { AccountantViewComponent } from './components/accountants/accountant-vie
 import { AccountantCreateComponent } from './components/accountants/accountant-create/accountant-create.component';
 import { AccountantEditComponent } from './components/accountants/accountant-edit/accountant-edit.component';
 import { AccountantListComponent } from './components/accountants/accountant-list/accountant-list.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import {AccordionModule} from 'primeng/accordion';
+import {MenuItem} from 'primeng/api';   
 
+import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 // 
 import { Routes, RouterModule } from '@angular/router';
 import { appRouters } from './app.router';
 import { LaythongtinService } from './service/laythongtin.service';
 import { HttpClientModule } from '@angular/common/http';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FilterPipe } from './pipes/filter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     AccountantCreateComponent,
     AccountantEditComponent,
     AccountantListComponent,
+    FilterPipe,
   ],
 
   imports: [
@@ -32,10 +43,14 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     RouterModule.forRoot(appRouters),
     HttpClientModule,
+    ReactiveFormsModule,
+    FontAwesomeModule,
+    FormsModule,
   ],
   providers: [
     LaythongtinService
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

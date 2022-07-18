@@ -68,3 +68,7 @@
 .btn-group-fix {
     margin: 24px 54px 24px 24px;
 }
+
+.toggle {
+    display: none;
+}

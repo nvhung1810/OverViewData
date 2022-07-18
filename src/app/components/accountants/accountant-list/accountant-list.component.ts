@@ -19,7 +19,13 @@ export class AccountantListComponent implements OnInit, OnDestroy {
   public _Accountant: Accountant[] = [];
   public _AccountantValue: Accountant[] = [];
   public _fullTimeandTotalMoney: fullTimeandTotalMoney[] = [];
-  
+  public _total: number = 0;
+  public _total1: number = 0;
+  public _totalArray: number[] = [];
+  public _totalArray1: number[] = [];
+
+  public _money: number = 0;
+
   //  get value để tìm
   public dateFilter: string;
   public numberFilter: string;
@@ -44,7 +50,24 @@ export class AccountantListComponent implements OnInit, OnDestroy {
   onGetValue() {
     this._Subscription = this._LaythongtinService.getAllValuses().subscribe((data: Accountant[]) => {
       this._Accountant = data;
-      console.log(this._Accountant);
+      for(let i = 0; i < this._Accountant.length; i++) {
+        for(let j = 0; j < this._Accountant[i].data.length; j++) {
+          this._money += this._Accountant[i].data[j].money;
+        }
+        this._totalArray.push(this._money);
+      }
+
+      for(let item = 1; item < this._totalArray.length; ++item) {
+        if(item == 1) {
+          this._totalArray1.push(this._totalArray[0]);
+        }
+        this._total = this._totalArray[item] - this._totalArray[item-1];
+        console.log(this._total);
+        this._totalArray1.push(this._total);
+      }
+      console.log(this._totalArray1);
+      // console.log(this._Accountant);
+      // Array.prototype.splice.apply(this._Accountant, [0, this._totalArray1.length].concat(_totalArray1));
     })
   }
 
@@ -52,5 +75,7 @@ export class AccountantListComponent implements OnInit, OnDestroy {
     if (this._Subscription) {
       this._Subscription.unsubscribe();
     }
+
   }
+
 }

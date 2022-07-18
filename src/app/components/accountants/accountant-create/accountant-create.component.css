@@ -1,0 +1,47 @@
+.col-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.fix1 {
+    margin-top: 20px;
+}
+
+.fix1-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.btn-fix {
+    float: right;
+    margin-right: 54px;
+    margin-bottom: 20px;
+}
+
+.input-wrap {
+    display: flex;
+    align-items: center;
+}
+
+/* Mobile && Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: block;
+    }
+}
+
+
+@media (max-width: 1023px) and (min-width: 740px) {
+
+}
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: block;
+    }
+}
+
+.btn-add {
+    margin: 20px 0 0 16px;
+}

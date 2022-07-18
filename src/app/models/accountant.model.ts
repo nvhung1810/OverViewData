@@ -8,6 +8,6 @@ export class Accountant {
     public have: number;
     public money: number;
     public exchange_rate: number;
-    public total: number;
+    public totalMoney: number;
     public data: any[];
 }

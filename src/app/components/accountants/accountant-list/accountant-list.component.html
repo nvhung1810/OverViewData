@@ -1,14 +1,16 @@
 <p class="txt_account animate__fadeInDown">Accounting Information</p>
 <div class="nav">
-  <button type="button" class="btn btn-primary btn-create" data-toggle="button" aria-pressed="false" autocomplete="off">CREATE</button>
+  <button type="button" class="btn btn-primary btn-create" data-toggle="button" aria-pressed="false" autocomplete="off"
+  [routerLink]="['/accountants/add']"
+  >CREATE</button>
   <!--  -->
-  <div class="abc col-md-1">
+  <!-- <div class="abc col-md-1">
     <select class="custom-select">
       <option selected>Filter</option>
       <option value="1">Tăng Dần</option>
       <option value="2">Giảm Dần</option>
     </select>
-  </div>
+  </div> -->
   <!--  -->
 </div>
 <section>
@@ -67,7 +69,7 @@
             <i class="fa-solid fa-angle-right"></i>
             {{item.fulldate}}
           </td>
-          <th class="editTable1 table-background"></th>
+          <th class="editTable1 table-background">{{item.totalMoney | number: '1.0-3'}}</th>
           <td class="editTable1 table-background"></td>
         </tr>
         <tr *ngFor="let value of item.data | filterAcc : dateFilter :
@@ -80,7 +82,7 @@
           <td class="editTable1">{{value.debt}}</td>
           <td class="editTable1">{{value.have}}</td>
           <td class="editTable1">{{value.money | number: '1.0-3'}}</td>
-          <td class="editTable1">{{value.exchange_rate}}</td>
+          <td class="editTable1">{{value.exchange_rate | number: '1.2-3'}}</td>
         </tr>
       </tbody>
       <!--Table body-->

@@ -45,3 +45,9 @@
 .btn-add {
     margin: 20px 0 0 16px;
 }
+
+.create-wrap {
+        /* margin-left: 12%; */
+        position: relative;
+        left: 12%;
+}

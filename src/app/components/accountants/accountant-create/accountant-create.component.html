@@ -4,62 +4,66 @@
         <p>Added new accounting information including date, number, explanation, amount credit, amount owed, total amount and rate</p>
     </div>
 </div>
+<hr style="margin-bottom: 48px">
 
 <div class="create-form">
     <div class="create-wrap">
-        <div class="input-wrap hide-on-mobile">
-            <div class="input-group col-md-3 mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-calendar"></i></span>
+        <div class="input-group-me">
+            <div class="input-wrap hide-on-mobile">
+                <div class="input-group col-md-3 mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-calendar"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Date" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                <input type="text" class="form-control" placeholder="Date" aria-label="Username" aria-describedby="basic-addon1">
+                <div class="input-group col-md-3 mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hashtag"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Number" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group col-md-3 mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-audio-description"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Description" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
             </div>
-            <div class="input-group col-md-3 mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hashtag"></i></span>
+            <div class="input-wrap hide-on-mobile">
+                <div class="input-group col-md-3 mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hand-holding-dollar"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Have" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                <input type="text" class="form-control" placeholder="Number" aria-label="Username" aria-describedby="basic-addon1">
+                <div class="input-group col-md-3 mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-circle-xmark"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Debt" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group col-md-3 mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-dollar-sign"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Money" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
             </div>
-            <div class="input-group col-md-3 mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-audio-description"></i></span>
+            <div class="input-wrap hide-on-mobile">
+                <div class="input-group col-md-3 mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-arrows-rotate"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Exchange rate" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                <input type="text" class="form-control" placeholder="Description" aria-label="Username" aria-describedby="basic-addon1">
             </div>
         </div>
-        <div class="input-wrap hide-on-mobile">
-            <div class="input-group col-md-3 mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hand-holding-dollar"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Have" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group col-md-3 mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-circle-xmark"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Debt" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group col-md-3 mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-dollar-sign"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Money" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-        </div>
-        <div class="input-wrap hide-on-mobile">
-            <div class="input-group col-md-3 mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-arrows-rotate"></i></span>
-                </div>
-                <input type="text" class="form-control" placeholder="Exchange rate" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-        </div>
+        <button type="button" class="btn btn-secondary btn-add" style="margin-bottom: 48px">ADD</button>
     </div>
-    <button type="button" class="btn btn-primary btn-add">ADD</button>
 </div>
 
-<div class="content-section documentation">
+
+<!-- <div class="content-section documentation">
     <p-tabView>
         <p-tabPanel header="inputgroupdemo.html">
 
@@ -72,4 +76,4 @@
           
         </p-tabPanel>
     </p-tabView>
-</div>
+</div> -->

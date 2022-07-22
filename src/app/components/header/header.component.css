@@ -3,23 +3,21 @@
 }
 
 .nav-primary-color {
-    background-color: #6E4864;
+    background-color: #38383B;
 }
 
-.navbar-brand {
-    color: #fff;
-}
-
+.navbar-brand,
+.navbar-toggler_fix,
 .nav-link {
-    color: #fff;
+    color: #8C9C9D;
 }
 
 .btn-outline {
-    background-color: #fff;
+    background-color: #8C9C9D;  
 }
 
 .active-click {
-    color: #15888E;
+    color: #fff;
 }
 
 .img {

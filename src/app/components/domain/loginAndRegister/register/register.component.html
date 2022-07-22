@@ -1,0 +1,65 @@
+<div class="all animate__animated animate__fadeIn">
+    <div class="txt-header-wrap">
+        <div class="wrap-header col-md-4">
+            <span class="txt-header">START FOR FREE</span>
+            <span class="txt-header-big">Create new account.</span>
+            <div class="have-acc">
+                <span class="txt-header txt-header-log">Already A Member?</span>
+                <a href="" class="txt-header txt-header-log-1">Log In</a>
+            </div>
+        </div>
+    </div>
+    <div class="register">
+        <div class="grid p-fluid col-md-4" style="width: 100%">
+            <div class="col-12 md:col-4 input-group input-group-fix">
+                <div class="txt-value">
+                    <p class="txt" style="font-weight: 700">First Name</p>
+                    <input type="text" pInputText [(ngModel)]="value1"> 
+                </div>  
+                <div class="txt-value">
+                    <p class="txt" style="font-weight: 700">Last Name</p>
+                    <input type="text" pInputText [(ngModel)]="value2"> 
+                </div>    
+            </div>
+            <div class="input-group">   
+                <div class="col-12 md:col-6 lg:col-4">
+                    <p class="txt" style="font-weight: 700">Birthday</p>
+                    <p-inputMask mask="99/99/9999" [(ngModel)]="value3" placeholder="99/99/9999" slotChar="mm/dd/yyyy"></p-inputMask>
+                </div>
+            </div>
+            <div class="col-12 md:col-4 input-group">   
+                <p class="txt" style="font-weight: 700">Email</p>
+                <input type="text" pInputText [(ngModel)]="value2"> 
+            </div>
+            <div class="col-12 md:col-4 input-group">   
+                <p class="txt col-12" style="font-weight: 700">Password</p>
+                <p-password [(ngModel)]="value3" [toggleMask]="true" class="password-edit col-12">
+                    <ng-template pTemplate="footer">
+                        <p class="mt-2">Suggestions</p>
+                        <ul class="pl-2 ml-2 mt-0" style="line-height: 1.5">
+                            <li>At least one lowercase</li>
+                            <li>At least one uppercase</li>
+                            <li>At least one numeric</li>
+                            <li>Minimum 8 characters</li>
+                        </ul>
+                    </ng-template>
+                </p-password>
+                <!-- <p-password [(ngModel)]="value4" class="password-edit col-12">
+                    <ng-template pTemplate="footer">
+                        <p class="mt-2">Suggestions</p>
+                        <ul class="pl-2 ml-2 mt-0" style="line-height: 1.5">
+                            <li>At least one lowercase</li>
+                            <li>At least one uppercase</li>
+                            <li>At least one numeric</li>
+                            <li>Minimum 8 characters</li>
+                        </ul>
+                    </ng-template>
+                </p-password> -->
+            </div>
+            <div class="btn-wrap">
+                <button pButton pRipple type="button" label="Change method" class="p-button-rounded p-button-me"></button>
+                <button pButton pRipple type="button" label="Create account" class="p-button-rounded p-button-create"></button>
+            </div>     
+        </div>
+    </div>
+</div>

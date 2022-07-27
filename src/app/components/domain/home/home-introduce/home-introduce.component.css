@@ -1,0 +1,538 @@
+.hea {
+    background-color: #38383B;
+    color: #fff;
+    padding: 0;
+    /* position: relative; */
+}
+
+.txt-hea {
+    font-size: 54px;
+    font-weight: 800;
+    text-align: end;
+    padding: 0 28px 0 0;
+    margin-top: 38%;
+}
+
+.txt-des {
+    text-align: end;
+    padding: 0 28px 0 0;
+    text-align: end;
+    width: 70%;
+    float: right;
+}
+
+.btn-me {
+    background-color: #fff;
+    color: #333;
+    margin-left: 68%;
+    margin-top: 18%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+
+.img-logo {
+    padding: 0;
+}
+
+.product-1 {
+    display: flex;
+}
+
+.product-footer-fix {
+    padding-left: 16%;
+}
+
+.product-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-fix {
+    margin: 0 0 48px 0;
+}
+
+.row-fix-1 {
+    margin: 0;
+}
+
+
+
+/*  */
+
+.des-head {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.des-txt {
+    text-align: justify;
+    margin-bottom: 48px;
+}
+
+.m-r-8 {
+    margin-right: 8px   ;
+}
+
+
+.dis-pa-ma {
+    padding: 0;
+    margin: 0;
+}
+/*  */
+
+.product-3-fix {
+    background-image: url("https://nvhung2.odoo.com/web_editor/shape/web_editor/Origins/17.svg?c3=%23202022");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat no-repeat;
+    background-color: #363639;
+}
+
+/*  phần giá */
+
+.part-num {
+    padding: 0 32px;
+    margin-top: 32px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+
+.about-hea-fot {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 12px 20px;
+    background-color: rgba(0, 0, 0, 0.59);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.fot-e {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+.about-hea-fot-fix {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 12px 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.price-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212529;
+    background-color: #EAEAEA;
+}
+
+.des-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #DFDFDF;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.num1 {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.num2 {
+    font-size: 78px;
+    font-weight: 700;
+}
+
+.month {
+    padding-bottom: 20px;
+}
+
+.btn-order {
+    color: #fff;
+    border: none;
+    background-color: #878787;
+    margin: 20px;
+}
+
+.row-fix-2  {
+    margin: 0;
+}
+
+.text-gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 48px;
+    display: block;
+}
+
+
+/* end */
+
+/*  4 */
+
+.product-4-1 {
+    background-color: #878787;
+}
+
+
+.sex-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212529;
+    background-color: #878787;
+}
+
+.sex-hea {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 700;
+    padding: 12px;
+}
+
+.icon-sex {
+    color: #fff;
+}
+
+.sex-txt {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+.sex-fot {
+    background-color: #878787;
+    margin-bottom: 24%;
+}
+
+.sex-btn {
+    background-color: #29292B;
+    padding: 16px 32px;
+}
+
+.about-con-1 {
+    padding: 24% 13% 0 13%;
+}
+
+.p-button.p-button-outlined:enabled:hover  {
+    background: rgba(33, 150, 243, 0.04);
+    color: #fff;
+    border: 1px solid;
+}
+
+.product-4-2 {
+    background-color: #38383B;
+}
+
+.product-4-3 {
+    background-color: #2a2a2c;
+}
+
+.back-btn {
+    background-color: #48484c;
+}
+
+.img-donors-wrap {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border: 1px solid; */
+    margin: 2% 9%;
+}
+
+.mar {
+    margin-right: 100px;
+    margin-left: 16%;
+    margin-bottom: 48px;
+}
+
+.mar1 {
+    margin-right: 40px;
+    margin-left: 14%;
+    margin-bottom: 48px;
+}
+
+
+.back-white {
+    background-color: #FFF;
+    color: #333;
+}
+
+.back-none {
+    background-color: transparent;
+}
+/* phần nào đó */
+
+
+.feature {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.slogan {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #37373A;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+.icon-fea {
+    padding: 26px;
+    color: #fff;
+    font-size: 32px;
+}
+
+.feature-icon-des {
+    display: flex;
+    align-items: center;
+}
+
+.feature-des-hea {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.feature-des {
+    padding-left: 18px;
+}
+
+.sex-hea-1 {
+    margin-top: 6%;
+}
+
+.sex-txt-1 {
+    margin-bottom: 2%;
+}
+
+.btn:not(:disabled):not(.o_wysiwyg_loader):not(.disabled) {
+    cursor: pointer;
+}
+
+
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 0.6rem 1.8rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 10rem;
+}
+
+.mb-2, .my-2 {
+    margin-bottom: 0.625rem !important;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 10rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.col-white {
+    color: #fff;
+}
+
+.ul-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo-link {
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 48px;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.facebook {
+    color: #3B5999;
+}
+
+.twitter {
+    color: #55ACEE
+}
+
+.insta {
+    color: #D02899;
+}
+
+.mr-b-none {
+    margin-bottom: 0;
+}
+
+
+.o_web_editor_Floats_02 {
+    background-image: url(https://nvhung2.odoo.com/web_editor/shape/web_editor/Floats/02.svg?c1=%23878787&c2=%23878787&c3=%23202022&c5=%23202022);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat no-repeat;
+}
+
+/*  */
+
+/* Mobile && Tablet */
+@media (max-width: 1023px) {
+    .txt-hea-res {
+        font-size: 34px;
+        font-weight: 800;
+        text-align: end;
+        padding: 0 28px 0 0;
+        margin-top: 10%;
+    }
+    .txt-des-res {
+        text-align: end;
+        padding: 0 28px 0 0;
+        text-align: end;
+        width: 70%;
+        float: right;
+        font-size: 12px;
+    }
+
+    .pl-none {
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 1023px) and (min-width: 740px) {
+    .btn-me-tab {
+        background-color: #fff;
+        color: #333;
+        margin-left: 45%;
+        margin-top: 8%;
+    }
+
+    .num1-tab {
+        font-size: 24px;
+    }
+
+    .num2-tab {
+        font-size: 44px;
+    }
+
+    .part-num-tab {
+        padding: 0;
+    }
+
+    .mr-tab {
+        margin-right: 20px;
+    }
+
+    .mar-tab {
+        margin-right: 100px;
+        margin-left: 10%;
+        margin-bottom: 48px;
+    }
+
+    .col-md-9-tab {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .pl-18 {
+        padding-left: 18%;
+    }
+
+   
+
+    .about-con-tab {
+        padding: 0 0 0 0;
+    }
+
+    .col-md-4-tab {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .mr-b-t {
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+
+    .mr-t {
+        margin-top: 48px;
+    }
+
+    .mar1-1 {
+        margin-left: 22%;
+        margin-bottom: 0;
+    }
+
+    .mr-2 {
+        margin-top: 20px;
+        margin-left: 12%;
+        margin-bottom: 48px;
+    }
+
+    .mr-2-fix {
+      
+    }
+    
+}
+
+@media (max-width: 739px) {
+    .btn-me-mobi {
+        background-color: #fff;
+        color: #333;
+        margin-left: 63%;
+        margin-bottom: 32px;
+    }
+    .remove-flex {
+        display: block;
+    }
+
+    .mr-left-none {
+        margin-left: 0;
+    }
+    
+    .txt-algn {
+        text-align: center;
+    }
+
+    .dis-flex {
+        justify-content: center;
+        align-items: center;
+    }
+}

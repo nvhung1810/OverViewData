@@ -31,6 +31,7 @@ import {CommonModule} from '@angular/common';
     import {PasswordModule} from 'primeng/password';
     import {InputMaskModule} from 'primeng/inputmask';
     import {DataViewModule} from 'primeng/dataview';
+    import {GalleriaModule} from 'primeng/galleria';
     // End primeng-angular
 
       // FontAwesome
@@ -53,6 +54,9 @@ import { LoginComponent } from './components/domain/loginAndRegister/login/login
 import { RegisterComponent } from './components/domain/loginAndRegister/register/register.component';
 
 //  Kết thúc của mình 
+
+// wow 
+
 
 @NgModule({
   declarations: [
@@ -100,7 +104,8 @@ import { RegisterComponent } from './components/domain/loginAndRegister/register
     CalendarModule,
     PasswordModule,
     InputMaskModule,
-    DataViewModule
+    DataViewModule,
+    GalleriaModule
   ],
   providers: [
     LaythongtinService,

@@ -10,7 +10,6 @@ import { fullTimeandTotalMoney } from '../models/fulltimeandtotalmoney.model';
 export class LaythongtinService {
 
   public url: string = 'https://62ce4de3066bd2b699326ce4.mockapi.io/accountant';
-  public urlfullTime: string = 'https://62ce4de3066bd2b699326ce4.mockapi.io/timeandtotalmoney';
 
   constructor(
     public http: HttpClient

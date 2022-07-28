@@ -1,490 +1,254 @@
-<div class="product-1 row row-fix">
-    <div class="col-md-4 hea">
-        <div class="txt-hea txt-hea-res animate__animated animate__fadeInLeft">The next summer collection</div>
-        <div class="txt-des txt-des-res animate__animated animate__fadeInLeft">   Color trends are already waiting to spring
-                                into action for the next summer.</div>
-        <button pButton pRipple type="button" label="Discover It" 
-        class="p-button-outlined p-button-rounded p-button btn-me btn-me-tab btn-me-mobi
-        animate__animated animate__fadeInLeft"></button>                     
-    </div>
-    <div class="col-md-8 img-logo">
-        <img class= "img" src="https://cdn.pixabay.com/photo/2015/01/15/13/06/woman-600238_960_720.jpg" alt="">
-    </div>
-</div>
-
-<div class="product-3 row row-fix">
-    <div class="col-md-3">
-        <img src="https://nvhung2.odoo.com/web/image/website.s_three_columns_default_image_1" 
-        alt="" class="img-pro-2 animate__animated animate__fadeIn" style="width: 100%">
-        <div class="des-3">
-            <div class="des-head">
-                Tính năng Một
-            </div>
-            <div class="des-txt">
-                Điều chỉnh ba cột này để phù hợp với nhu cầu thiết kế của bạn. Để sao chép, xóa hoặc di chuyển cột, hãy chọn cột và sử dụng các biểu tượng trên cùng để thực hiện hành động của bạn.
-            </div>
+<div class="all-product" *ngFor="let valueall of _ValueInHome">
+    <div class="product-1 row row-fix" *ngFor="let value of valueall.data">
+        <div class="col-md-4 hea" >
+            <div class="txt-hea txt-hea-res animate__animated animate__fadeInLeft">{{value.header}}</div>
+            <div class="txt-des txt-des-res animate__animated animate__fadeInLeft">{{value.desciption}}</div>
+            <button pButton pRipple type="button"
+            class="p-button-outlined p-button-rounded p-button btn-me btn-me-tab btn-me-mobi
+            animate__animated animate__fadeInLeft">{{value.txtbtn}}</button>                     
+        </div>
+        <div class="col-md-8 img-logo">
+            <img class= "img" alt="" src= {{value.imglink}}>
         </div>
     </div>
-    <div class="col-md-3">
-        <img src="https://nvhung2.odoo.com/web/image/website.s_three_columns_default_image_2" 
-        alt="" class="img-pro-2 animate__animated animate__fadeIn" style="width: 100%">
-        <div class="des-3">
-            <div class="des-head">
-                Tính năng Một
-            </div>
-            <div class="des-txt">
-                Điều chỉnh ba cột này để phù hợp với nhu cầu thiết kế của bạn. Để sao chép, xóa hoặc di chuyển cột, hãy chọn cột và sử dụng các biểu tượng trên cùng để thực hiện hành động của bạn.
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <img src="https://nvhung2.odoo.com/web/image/website.s_three_columns_default_image_3" 
-        alt="" class="img-pro-2 animate__animated animate__fadeIn" style="width: 100%">
-        <div class="des-3">
-            <div class="des-head">
-                Tính năng Một
-            </div>
-            <div class="des-txt">
-                Điều chỉnh ba cột này để phù hợp với nhu cầu thiết kế của bạn. Để sao chép, xóa hoặc di chuyển cột, hãy chọn cột và sử dụng các biểu tượng trên cùng để thực hiện hành động của bạn.
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="product-4-wrap">
-    <div class="product-4 row row-fix-1">
-        <div class="col-md-4 dis-pa-ma">
-            <img src="https://nvhung2.odoo.com/web/image/website.library_image_03" alt="" style="width: 100%; height: 100%;">
-        </div>
-        <div class="col-md-4 dis-pa-ma">
-            <img src="https://nvhung2.odoo.com/web/image/website.library_image_13" alt="" style="width: 100%; height: 100%;">
-
-        </div>
-        <div class="col-md-4 dis-pa-ma">
-            <img src="https://nvhung2.odoo.com/web/image/website.library_image_05" alt="" style="width: 100%; height: 100%;">
-        </div>
-    </div>
-    <div class="product-4 row row-fix-1">
-        <div class="col-md-4 dis-pa-ma">
-            <img src="https://nvhung2.odoo.com/web/image/website.library_image_10" alt="" style="width: 100%; height: 100%;">
-        </div>
-        <div class="col-md-4 dis-pa-ma">
-            <img src="https://nvhung2.odoo.com/web/image/website.library_image_14" alt="" style="width: 100%; height: 100%;">
-        </div>
-        <div class="col-md-4 dis-pa-ma">
-            <img src="https://nvhung2.odoo.com/web/image/website.library_image_11" alt="" style="width: 100%; height: 100%;">
-        </div>
-    </div>
-    <!-- slide -->
-    <!-- <p-galleria  [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5">
-        <ng-template pTemplate="item" let-item>
-            <img [src]="item.previewImageSrc" style="width: 100%;" />
-        </ng-template>
-        <ng-template pTemplate="thumbnail" let-item>
-            <div class="grid grid-nogutter justify-content-center">
-                <img [src]="item.thumbnailImageSrc" />
-            </div>
-        </ng-template>
-    </p-galleria> -->
-    <!-- end slide -->
-</div>
-
-<div class="product-3 product-3-fix row row-fix row-fix-2 ">
-    <div class="col-md-3 part-num part-num-tab mr-tab">
-        <div class="about-hea-fot">
-            Người Bắt Đầu
-        </div>
-        <div class="about-con">
-            <div class="con-des con-price">
-                <div class="price-num">
-                    <div class="num1 num1-tab animate__animated animate__pulse animate__infinite	infinite">$</div>
-                    <div class="num2 num2-tab animate__animated animate__pulse animate__infinite	infinite">35</div>
-                    <div class="num1 num1-tab animate__animated animate__pulse animate__infinite	infinite">.00</div>
+    
+    <div class="product-3 row row-fix">
+        <div class="col-md-3" *ngFor="let value1 of valueall.data1">
+            <img src= {{value1.imglink}}
+            alt="" class="img-pro-2 animate__animated animate__fadeIn" style="width: 100%">
+            <div class="des-3">
+                <div class="des-head">
+                    {{value1.header}}
                 </div>
-                <div class="price-num month">/tháng</div>
-            </div>
-            <div class="con-des des-edit ">
-                Bán hàng cơ bản & amp; tiếp thị cho tối đa 2 người dùng
-            </div>
-            <div class="con-des des-edit ">
-                Account & Quản lý bán hàng
-            </div>
-            <div class="con-des des-edit ">
-                Không có tùy chỉnh
-            </div>
-            <div class="con-des des-edit">
-                Không hỗ trợ
-            </div>
-        </div>
-        <div class="about-hea-fot about-hea-fot-fix fot-e">
-            <div class="span fot-txt">Cài đặt nhanh chóng, thoả mãn hoặc sẽ hoàn tiền.</div>
-            <button pButton pRipple type="button" label="Order Now" 
-            class="p-button-outlined p-button-rounded p-button btn-order"></button>  
-        </div>
-    </div>
-    <div class="col-md-3 part-num part-num-tab mr-tab">
-        <div class="about-hea-fot">
-            Người Bắt Đầu
-        </div>
-        <div class="about-con">
-            <div class="con-des con-price">
-                <div class="price-num">
-                    <div class="num1 num1-tab animate__animated animate__pulse animate__infinite	infinite">$</div>
-                    <div class="num2 num2-tab animate__animated animate__pulse animate__infinite	infinite">65</div>
-                    <div class="num1 num1-tab animate__animated animate__pulse animate__infinite	infinite">.00</div>
+                <div class="des-txt">
+                    {{value1.desciption}}
                 </div>
-                <div class="price-num month">/tháng</div>
             </div>
-            <div class="con-des des-edit ">
-                Bán hàng cơ bản & amp; tiếp thị cho tối đa 2 người dùng
-            </div>
-            <div class="con-des des-edit ">
-                Account & Quản lý bán hàng
-            </div>
-            <div class="con-des des-edit ">
-                Không có tùy chỉnh
-            </div>
-            <div class="con-des des-edit">
-                Không hỗ trợ
-            </div>
-        </div>
-        <div class="about-hea-fot about-hea-fot-fix fot-e">
-            <div class="span fot-txt">Cài đặt nhanh chóng, thoả mãn hoặc sẽ hoàn tiền.</div>
-            <button pButton pRipple type="button" label="Order Now" 
-            class="p-button-outlined p-button-rounded p-button btn-order"></button>  
         </div>
     </div>
-    <div class="col-md-3 part-num part-num-tab">
-        <div class="about-hea-fot">
-            Người Bắt Đầu
+    
+    <div class="product-4-wrap">
+        <div class="product-4 row row-fix-1">
+            <div class="col-md-4 dis-pa-ma" *ngFor="let value2 of valueall.data2">
+                <img src= {{value2.imglink}} alt="" style="width: 100%; height: 100%;">
+            </div>
         </div>
-        <div class="about-con">
-            <div class="con-des con-price">
-                <div class="price-num">
-                    <div class="num1 num1-tab animate__animated animate__pulse animate__infinite	infinite">$</div>
-                    <div class="num2 num2-tab animate__animated animate__pulse animate__infinite	infinite">125</div>
-                    <div class="num1 num1-tab animate__animated animate__pulse animate__infinite	infinite">.00</div>
+    </div>
+    
+    <div class="product-3 product-3-fix row row-fix row-fix-2 ">
+        <div class="col-md-3 part-num part-num-tab mr-tab" *ngFor="let value3 of valueall.data3">
+            <div class="about-hea-fot">
+                {{value3.header}}
+            </div>
+            <div class="about-con">
+                <div class="con-des con-price">
+                    <div class="price-num">
+                        <div class="num1 num1-tab animate__animated animate__pulse animate__infinite infinite">{{value3.pricecurrency}}</div>
+                        <div class="num2 num2-tab animate__animated animate__pulse animate__infinite infinite">{{value3.price1}}</div>
+                        <div class="num1 num1-tab animate__animated animate__pulse animate__infinite infinite">{{value3.price2}}</div>
+                    </div>
+                    <div class="price-num month">{{value3.month}}</div>
                 </div>
-                <div class="price-num month">/tháng</div>
+                <div class="con-des des-edit ">
+                    {{value3.desciption}}
+                </div>
+                <div class="con-des des-edit ">
+                    {{value3.desciption1}}
+                </div>
+                <div class="con-des des-edit ">
+                    {{value3.desciption2}}
+                </div>
+                <div class="con-des des-edit">
+                    {{value3.desciption3}}
+                </div>
             </div>
-            <div class="con-des des-edit ">
-                Bán hàng cơ bản & amp; tiếp thị cho tối đa 2 người dùng
+            <div class="about-hea-fot about-hea-fot-fix fot-e">
+                <div class="span fot-txt">{{value3.desciption4}}</div>
+                <button pButton pRipple type="button" label="" 
+                class="p-button-outlined p-button-rounded p-button btn-order">{{value3.txtbtn}}</button>  
             </div>
-            <div class="con-des des-edit ">
-                Account & Quản lý bán hàng
-            </div>
-            <div class="con-des des-edit ">
-                Không có tùy chỉnh
-            </div>
-            <div class="con-des des-edit">
-                Không hỗ trợ
-            </div>
-        </div>
-        <div class="about-hea-fot about-hea-fot-fix fot-e">
-            <div class="span fot-txt">Cài đặt nhanh chóng, thoả mãn hoặc sẽ hoàn tiền.</div>
-            <button pButton pRipple type="button" label="Order Now" 
-            class="p-button-outlined p-button-rounded p-button btn-order"></button>  
         </div>
     </div>
-</div>
-
-<div class="product-4-wrap">
-    <div class="product-4 row row-fix-1">
-        <div class="col-md-4 dis-pa-ma product-4-1">
-            <div class="about-con-1">
-                <div class="con-sex">
-                    <div class="sex-num">
-                        <i class="fa fa-5x m-3 fa-venus animate__animated animate__pulse animate__infinite	infinite icon-sex"></i>
+    
+    <div class="product-4-wrap">
+        <div class="product-4 row row-fix-1">
+            <div class="col-md-4 dis-pa-ma" *ngFor="let value4 of valueall.data4">
+                <div class="product-4-1 {{value4.classEdit}}"> 
+                    <div class="about-con-1">
+                        <div class="con-sex">
+                            <div class="sex-num {{value4.classEdit}}">
+                                <i class="{{value4.iconuse}}"></i>
+                            </div>
+                        </div>
+                        <div class="sex-hea">
+                            {{value4.header}}
+                        </div>
+                        <div class="sex-txt">
+                            {{value4.desciption}}
+                        </div>
+                    </div>
+                    <div class="about-hea-fot about-hea-fot-fix fot-e sex-fot {{value4.classEdit}}">
+                        <button pButton pRipple type="button" label="{{value4.txtbtn}}" 
+                        class="p-button-outlined p-button-rounded p-button btn-order sex-btn"></button>  
                     </div>
                 </div>
-                <div class="sex-hea">
-                    Fashion for her
-                </div>
-                <div class="sex-txt">
-                    Refresh your daily rotation with our women’s clothing range. Discover our last collection for her for the next summer.
-                </div>
-            </div>
-            <div class="about-hea-fot about-hea-fot-fix fot-e sex-fot">
-                <button pButton pRipple type="button" label="More Details" 
-                class="p-button-outlined p-button-rounded p-button btn-order sex-btn"></button>  
             </div>
         </div>
-        <div class="col-md-4 dis-pa-ma product-4-1 product-4-2">
-            <div class="about-con-1 ">
-                <div class="con-sex">
-                    <div class="sex-num product-4-2">
-                        <i class="fa fa-5x m-3 fa-mars animate__animated animate__pulse animate__infinite	infinite icon-sex"></i>
-                        
+    </div>
+    
+    <div class="product-2 row row-fix">
+        <div class="txt-header-mo" *ngFor="let value5 of valueall.data5">
+            <h2 style="text-align: center;" class="col-md-12">
+                <font style="background-image: linear-gradient(135deg, #38383B 0%, #878787 100%);" class="text-gradient">{{value5.header}}</font>
+            </h2>
+            <span class="txt-donors col-md-12" style="text-align: center;">{{value5.desciption}}</span>
+        </div>
+        <div class="col-md-10 img-donors-wrap">
+                <img *ngFor="let value6 of valueall.data6" src={{value6.imglink}} alt="" class="img-donors col-md-2 col-md-4-tab">   
+        </div>
+    </div>
+    
+    <div class="product-2 row row-fix">
+            <div class="col-md-4 mar mar-tab" *ngFor="let value7 of valueall.data7">
+                <div class="feature">
+                    {{value7.header}}
+                </div>
+                <div class="slogan">
+                    {{value7.desciption}}
+                </div>
+                <div class="feature-icon-des mr-b-t {{value7.animate}}"
+                *ngFor="let valuechildren7 of value7.data7children"
+                >
+                    <div class="feature-icon">
+                        <i class="{{valuechildren7.iconuse}}"></i>
+                    </div>
+                    <div class="feature-des">
+                       <div class="feature-des-hea">{{valuechildren7.desciption1}}</div>
+                       <div class="feature-des-txt">{{valuechildren7.desciption2}}</div>
                     </div>
                 </div>
-                <div class="sex-hea">
-                    Style for him
-                </div>
-                <div class="sex-txt">
-                    Perfectly combined by fashion experts. Get fresh outfit ideas for the new season and every occasion. Discover what's made for him.
-                </div>
             </div>
-            <div class="about-hea-fot about-hea-fot-fix fot-e sex-fot product-4-2">
-                <button pButton pRipple type="button" label="More Details" 
-                class="p-button-outlined p-button-rounded p-button btn-order sex-btn back-btn"></button>  
+    </div>
+    
+    <div *ngFor="let value8 of valueall.data8" class="product-2 row {{value8.flexrowreverse}}" style="background-color: #202022;">
+            <div class="col-md-4 col-md-9-tab mar1" style="margin-top: 20px;">
+                <img src="{{value8.imglink}}" 
+                class="s_media_list_img h-100 w-100" alt="" 
+                data-shape="web_editor/float/flt_square_1" 
+                data-original-mimetype="image/jpeg" 
+                data-file-name="s_media_list_1.svg" 
+                data-shape-colors="o-color-4;o-color-2;;;" 
+                loading="lazy"> 
             </div>
-        </div>
-        <div class="col-md-4 dis-pa-ma product-4-1 product-4-3">
-            <div class="about-con-1">
-                <div class="con-sex">
-                    <div class="sex-num product-4-3">
-                        <i class="fa fa-venus-mars fa-5x m-3 animate__animated animate__pulse animate__infinite	infinite icon-sex"></i>
+            <div class="col-md-4 col-md-9-tab {{value8.animate}}">
+                <div class="about-con-1 about-con-tab">
+                    <div class="sex-hea">
+                        {{value8.header}}
+                    </div>
+                    <div class="sex-txt">
+                        {{value8.desciption}}
                     </div>
                 </div>
-                <div class="sex-hea">
-                    Fancy for them
-                </div>
-                <div class="sex-txt">
-                    Are you looking for sustainable clothing for men or women? Discover our exclusive fashion brand for both of you.
+                <div class="about-hea-fot about-hea-fot-fix fot-e product-4-2 back-none">
+                    <button pButton pRipple type="button" label="{{value8.txtbtn}}" 
+                    class="p-button-outlined p-button-rounded p-button btn-order sex-btn back-btn back-white"></button>  
                 </div>
             </div>
-            <div class="about-hea-fot about-hea-fot-fix fot-e sex-fot product-4-3">
-                <button pButton pRipple type="button" label="More Details" 
-                class="p-button-outlined p-button-rounded p-button btn-order sex-btn back-btn"></button>  
+            <!-- <div class="col-md-4 col-md-9-tab mar1 mar1-1">
+                <div class="about-con-1 about-con-tab">
+                    <div class="sex-hea">
+                        Summer Essentials
+                    </div>
+                    <div class="sex-txt">
+                        The right summer essentials can make the difference between a good time and a stand-out great time. Discover our selection for everyday wear during the warm summer months.
+                    </div>
+                </div>
+                <div class="about-hea-fot about-hea-fot-fix fot-e product-4-2 back-none">
+                    <button pButton pRipple type="button" label="Read more" 
+                    class="p-button-outlined p-button-rounded p-button btn-order sex-btn back-btn back-white"></button>  
+                </div>
+            </div>
+            <div class="col-md-4 col-md-9-tab mr-2 ">
+                <img src="https://nvhung2.odoo.com/web_editor/image_shape/website.s_media_list_default_image_2/web_editor/float/flt_square_3.svg?c1=o-color-1&c5=o-color-2" 
+                class="s_media_list_img h-100 w-100" alt="" 
+                data-shape="web_editor/float/flt_square_1" 
+                data-original-mimetype="image/jpeg" 
+                data-file-name="s_media_list_1.svg" 
+                data-shape-colors="o-color-4;o-color-2;;;" 
+                loading="lazy"> 
+            </div> -->
+    </div>
+    
+    <div class="product-2 row row-fix" style="margin-top: 54px;">
+        <div class="col-md-4 col-md-9-tab mar mar-tab mr-left-none" *ngFor="let value9 of valueall.data9">
+            <div class="feature-icon-des mr-b-t {{value9.animate}}">
+                  <img src={{value9.imglink}} alt=""
+                  style="height: 178px; margin-bottom: 48px;">
+                <div class="feature-des pl-18">
+                   <div class="feature-des-hea">{{value9.header}}</div>
+                   <div class="feature-des-txt">{{value9.desciption}}</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="product-2 row row-fix">
-    <h2 style="text-align: center;" class="col-md-12">
-        <font style="background-image: linear-gradient(135deg, #38383B 0%, #878787 100%);" class="text-gradient">Our top brands</font>
-    </h2>
-    <span class="txt-donors col-md-12" style="text-align: center;">Every style for everybody.</span>
-
-    <div class="col-md-10 img-donors-wrap">
-        <img src="https://nvhung2.odoo.com/web/image/website.s_reference_demo_image_1" alt="" class="img-donors col-md-2 col-md-4-tab">
-        <img src="https://nvhung2.odoo.com/web/image/website.s_reference_demo_image_1" alt="" class="img-donors col-md-2 col-md-4-tab">
-        <img src="https://nvhung2.odoo.com/web/image/website.s_reference_demo_image_1" alt="" class="img-donors col-md-2 col-md-4-tab">
-        <img src="https://nvhung2.odoo.com/web/image/website.s_reference_demo_image_1" alt="" class="img-donors col-md-2 col-md-4-tab">
-        <img src="https://nvhung2.odoo.com/web/image/website.s_reference_demo_image_1" alt="" class="img-donors col-md-2 col-md-4-tab">
-        <img src="https://nvhung2.odoo.com/web/image/website.s_reference_demo_image_1" alt="" class="img-donors col-md-2 col-md-4-tab">
-    </div>
-</div>
-
-<div class="product-2 row row-fix">
-        <div class="col-md-4 mar mar-tab">
-            <div class="feature">
-                Danh sách đầu tiên của tính năng
+    
+    <div class="product-footer pl-none row row-fix row-fix-2" style="background-color: #38383B;" *ngFor="let value10 of valueall.data10">
+        <div class="about-con-2 o_web_editor_Floats_02 about-con-tab col-md-12" style="border-bottom: 1px solid;">
+            <div class="sex-hea sex-hea-1">
+                {{value10.header}}
             </div>
-            <div class="slogan">
-                Thêm 1 câu slogan.
+            <div class="sex-txt sex-txt-1">
+                {{value10.desciption}}
             </div>
-            <div class="feature-icon-des mr-b-t wow animate__animated animate__fadeInLeft wow animate__animated animate__fadeInLeft">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-flag icon-fea"></i>
-                </div>
-                <div class="feature-des">
-                   <div class="feature-des-hea">Đổi Icon</div>
-                   <div class="feature-des-txt">Nhấp đúp chuột vào một biểu tượng để thay thế nó bằng một trong những lựa chọn của bạn.</div>
-                </div>
-            </div>
-            <div class="feature-icon-des mr-b-t wow animate__animated animate__fadeInLeft">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-flag icon-fea"></i>
-                </div>
-                <div class="feature-des">
-                   <div class="feature-des-hea">Đổi Icon</div>
-                   <div class="feature-des-txt">Nhấp đúp chuột vào một biểu tượng để thay thế nó bằng một trong những lựa chọn của bạn.</div>
-                </div>
-            </div>
-            <div class="feature-icon-des mr-b-t wow animate__animated animate__fadeInLeft">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-flag icon-fea"></i>
-                </div>
-                <div class="feature-des">
-                   <div class="feature-des-hea">Đổi Icon</div>
-                   <div class="feature-des-txt">Nhấp đúp chuột vào một biểu tượng để thay thế nó bằng một trong những lựa chọn của bạn.</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 ">
-            <div class="feature">
-                Danh sách đầu tiên của tính năng
-            </div>
-            <div class="slogan">
-                Thêm 1 câu slogan.
-            </div>
-            <div class="feature-icon-des mr-b-t wow animate__animated animate__fadeInRight">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-flag icon-fea"></i>
-                </div>
-                <div class="feature-des">
-                   <div class="feature-des-hea">Đổi Icon</div>
-                   <div class="feature-des-txt">Nhấp đúp chuột vào một biểu tượng để thay thế nó bằng một trong những lựa chọn của bạn.</div>
-                </div>
-            </div>
-            <div class="feature-icon-des mr-b-t wow animate__animated animate__fadeInRight">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-flag icon-fea"></i>
-                </div>
-                <div class="feature-des">
-                   <div class="feature-des-hea">Đổi Icon</div>
-                   <div class="feature-des-txt">Nhấp đúp chuột vào một biểu tượng để thay thế nó bằng một trong những lựa chọn của bạn.</div>
-                </div>
-            </div>
-            <div class="feature-icon-des mr-b-t wow animate__animated animate__fadeInRight">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-flag icon-fea"></i>
-                </div>
-                <div class="feature-des">
-                   <div class="feature-des-hea">Đổi Icon</div>
-                   <div class="feature-des-txt">Nhấp đúp chuột vào một biểu tượng để thay thế nó bằng một trong những lựa chọn của bạn.</div>
-                </div>
-            </div>
-        </div>
-</div>
-
-<div class="product-2 row row-fix" style="background-color: #202022;">
-        <div class="col-md-4 col-md-9-tab mar1" style="margin-top: 20px;">
-            <img src="https://nvhung2.odoo.com/web_editor/image_shape/website.s_media_list_default_image_1/web_editor/float/flt_square_1.svg?c1=o-color-4&c2=o-color-2" 
-            class="s_media_list_img h-100 w-100" alt="" 
-            data-shape="web_editor/float/flt_square_1" 
-            data-original-mimetype="image/jpeg" 
-            data-file-name="s_media_list_1.svg" 
-            data-shape-colors="o-color-4;o-color-2;;;" 
-            loading="lazy"> 
-        </div>
-        <div class="col-md-4 col-md-9-tab">
-            <div class="about-con-1 about-con-tab">
-                <div class="sex-hea">
-                    World's top Hidden gems
-                </div>
-                <div class="sex-txt">
-                    Go off beaten track and discover unexpected and curious places. Here’s our ultimate guide to the best-kept secret spots that you simply must visit!
-                </div>
-            </div>
-            <div class="about-hea-fot about-hea-fot-fix fot-e product-4-2 back-none">
-                <button pButton pRipple type="button" label="Discover" 
-                class="p-button-outlined p-button-rounded p-button btn-order sex-btn back-btn back-white"></button>  
-            </div>
-        </div>
-        <div class="col-md-4 col-md-9-tab mar1 mar1-1">
-            <div class="about-con-1 about-con-tab">
-                <div class="sex-hea">
-                    Summer Essentials
-                </div>
-                <div class="sex-txt">
-                    The right summer essentials can make the difference between a good time and a stand-out great time. Discover our selection for everyday wear during the warm summer months.
-                </div>
-            </div>
-            <div class="about-hea-fot about-hea-fot-fix fot-e product-4-2 back-none">
-                <button pButton pRipple type="button" label="Read more" 
-                class="p-button-outlined p-button-rounded p-button btn-order sex-btn back-btn back-white"></button>  
-            </div>
-        </div>
-        <div class="col-md-4 col-md-9-tab mr-2 ">
-            <img src="https://nvhung2.odoo.com/web_editor/image_shape/website.s_media_list_default_image_2/web_editor/float/flt_square_3.svg?c1=o-color-1&c5=o-color-2" 
-            class="s_media_list_img h-100 w-100" alt="" 
-            data-shape="web_editor/float/flt_square_1" 
-            data-original-mimetype="image/jpeg" 
-            data-file-name="s_media_list_1.svg" 
-            data-shape-colors="o-color-4;o-color-2;;;" 
-            loading="lazy"> 
-        </div>
-</div>
-
-<div class="product-2 row row-fix">
-    <div class="col-md-4 col-md-9-tab mar mar-tab mr-left-none">
-        <div class="feature-icon-des mr-b-t">
-              <img src="https://nvhung2.odoo.com/web_editor/image_shape/website.s_company_team_image_1/web_editor/basic/bsc_square_1.svg" alt=""
-              style="height: 178px; margin-bottom: 48px;">
-            <div class="feature-des pl-18">
-               <div class="feature-des-hea">Tony Fred Editor-in-chief</div>
-               <div class="feature-des-txt">Founder and chief visionary, Tony is the driving force behind the company. He loves to keep his hands full by participating in the development of the magazine and does not hesitate to carry out field surveys.            </div>
-            </div>
-        </div>
-        <div class="feature-icon-des mr-b-t">
-            <img src="https://nvhung2.odoo.com/web_editor/image_shape/website.s_company_team_image_3/web_editor/basic/bsc_square_3.svg" alt=""
-            style="height: 178px;">
-          <div class="feature-des pl-18">
-             <div class="feature-des-hea">Aline Turner
-                Photograph</div>
-             <div class="feature-des-txt">Founder and chief visionary, Tony is the driving force behind the company. He loves to keep his hands full by participating in the development of the magazine and does not hesitate to carry out field surveys.            </div>
-          </div>
+            <p style="text-align: center; margin-bottom: 8rem; margin-top: 48px">
+                <a class="btn btn-primary btn-lg mb-2" href="/contactus" data-original-title="" title="" style="background-color: #fff;">{{value10.txtbtn}}</a>
+            </p>  
         </div>
     </div>
-    <div class="col-md-4 col-md-9-tab mar-tab">
-        <div class="feature-icon-des mr-b-t">
-            <img src="https://nvhung2.odoo.com/web_editor/image_shape/website.s_company_team_image_2/web_editor/basic/bsc_square_2.svg" alt=""
-            style="height: 178px; margin-bottom: 48px;">
-          <div class="feature-des pl-18">
-             <div class="feature-des-hea">Tony Fred Editor-in-chief</div>
-             <div class="feature-des-txt">Founder and chief visionary, Tony is the driving force behind the company. He loves to keep his hands full by participating in the development of the magazine and does not hesitate to carry out field surveys.            </div>
-          </div>
-        </div>
-        <div class="feature-icon-des mr-b-t">
-            <img src="https://nvhung2.odoo.com/web_editor/image_shape/website.s_company_team_image_4/web_editor/basic/bsc_square_1.svg" alt=""
-            style="height: 178px;">
-            <div class="feature-des pl-18">
-                <div class="feature-des-hea">Tony Fred Editor-in-chief</div>
-                <div class="feature-des-txt">Founder and chief visionary, Tony is the driving force behind the company. He loves to keep his hands full by participating in the development of the magazine and does not hesitate to carry out field surveys.            </div>
-            </div>
-            </div>
-        </div>
-</div>
-
-<div class="product-footer pl-none row row-fix row-fix-2" style="background-color: #38383B;">
-    <div class="about-con-2 o_web_editor_Floats_02 about-con-tab col-md-12" style="border-bottom: 1px solid;">
-        <div class="sex-hea sex-hea-1">
-            Be yourself, create your own style
-        </div>
-        <div class="sex-txt sex-txt-1">
-            Discover the new summer collection.
-        </div>
-        <p style="text-align: center; margin-bottom: 8rem; margin-top: 48px">
-            <a class="btn btn-primary btn-lg mb-2" href="/contactus" data-original-title="" title="" style="background-color: #fff;">Discover It</a>
-        </p>  
-    </div>
-</div>
-
-<div class="product-footer product-footer-fix pl-none row row-fix mr-b-none" style="background-color: #38383B; padding-top: 48px;">
-    <div class="col-md-3 mr-t">
-        <div class="feature-des">
-            <div class="feature-des-hea col-white txt-algn">Đã thiệt kế
-                cho công ty</div>
-         </div>
-         <ul style="color: #fff; margin: 20px 0 48px 0;">
-            <li style="padding-top: 8px;">Trang chủ</li>
-            <li style="padding-top: 8px;">Liên hệ</li>
-            <li style="padding-top: 8px;">Privacy Policy</li>
-         </ul>
-    </div>
-
-    <div class="col-md-6 mr-t col-md-9-tab">
-        <div class="feature-des-txt col-white txt-algn">Chúng tôi là một đội gồm những người đầy nhiệt huyết với mục tiêu là cải thiện cuộc sống của mọi người.
-            Dịch vụ của chúng tôi được thiết kế cho các công ty vừa và nhỏ.
-        </div>
-        <div class="ul-wrap remove-flex">
-            <ul style="color: #fff; margin: 20px 0 48px 0; list-style: none; padding: 0;">
-                <li style="padding-top: 8px;">
-                    <i class="fa fa-phone fa-fw m-r-8"></i>
-                    <a href="+84 964704691"  style="color: #fff; text-decoration: none; ">+84 964704691</a>
-                </li>
-                <li style="padding-top: 8px;">
-                    <i class="fa fa-envelope fa-fw m-r-8"></i>
-                    <a href="gmail.com"  style="color: #fff; text-decoration: none; ">nguyenvanhung181001@gmail.com</a>
-                </li>
-            </ul>
-            
-            <ul style="color: #fff; margin: 20px 0 48px 0; list-style: none; padding: 0;">
-                <li style="padding-top: 8px; display: flex;" class="dis-flex">
-                    <a href="" class="logo-link facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="" class="logo-link twitter">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="" class="logo-link insta">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
+    
+    <div class="product-footer product-footer-fix pl-none row row-fix mr-b-none" 
+    style="background-color: #38383B; padding-top: 48px;"
+    *ngFor="let value11 of valueall.data11">
+        <div class="col-md-3 mr-t">
+            <div class="feature-des">
+                <div class="feature-des-hea col-white txt-algn">{{value11.header}}</div>
+             </div>
+             <ul style="color: #fff; margin: 20px 0 48px 0;">
+                <li style="padding-top: 8px;">{{value11.desciption}}</li>
+                <li style="padding-top: 8px;">{{value11.desciption1}}</li>
+                <li style="padding-top: 8px;">{{value11.desciption2}}</li>
              </ul>
         </div>
+    
+        <div class="col-md-6 mr-t col-md-9-tab">
+            <div class="feature-des-txt col-white txt-algn">{{value11.desciption3}}</div>
+            <div class="ul-wrap remove-flex">
+                <ul style="color: #fff; margin: 20px 0 48px 0; list-style: none; padding: 0;">
+                    <li style="padding-top: 8px;">
+                        <i class="{{value11.phoneicon}}"></i>
+                        <a href="{{value11.phone}}"  style="color: #fff; text-decoration: none; ">{{value11.phone}}</a>
+                    </li>
+                    <li style="padding-top: 8px;">
+                        <i class="{{value11.emailicon}}"></i>
+                        <a href="{{value11.email}}"  style="color: #fff; text-decoration: none; ">{{value11.email}}</a>
+                    </li>
+                </ul>
+                
+                <ul style="color: #fff; margin: 20px 0 48px 0; list-style: none; padding: 0;">
+                    <li style="padding-top: 8px; display: flex;" class="dis-flex">
+                        <a href="" class="logo-link facebook">
+                            <i class="{{value11.facebook}}"></i>
+                        </a>
+                        <a href="" class="logo-link twitter">
+                            <i class="{{value11.twitter}}"></i>
+                        </a>
+                        <a href="" class="logo-link insta">
+                            <i class="{{value11.instagram}}"></i>
+                        </a>
+                    </li>
+                 </ul>
+            </div>
+        </div>
     </div>
+    
 </div>

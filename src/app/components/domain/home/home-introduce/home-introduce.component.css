@@ -50,7 +50,7 @@
 .product-3 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .row-fix {
@@ -164,12 +164,17 @@
 .btn-order {
     color: #fff;
     border: none;
-    background-color: #878787;
+    background-color: #585858;
     margin: 20px;
 }
 
 .row-fix-2  {
     margin: 0;
+}
+
+.txt-header-mo {
+    text-align: center;
+    width: 100%;
 }
 
 .text-gradient {
@@ -217,16 +222,16 @@
 
 .sex-fot {
     background-color: #878787;
-    margin-bottom: 24%;
+    padding-bottom: 14%;
 }
 
 .sex-btn {
-    background-color: #29292B;
+    background-color: 454548;
     padding: 16px 32px;
 }
 
 .about-con-1 {
-    padding: 24% 13% 0 13%;
+    padding: 24% 10% 0 10%;
 }
 
 .p-button.p-button-outlined:enabled:hover  {
@@ -256,14 +261,14 @@
 }
 
 .mar {
-    margin-right: 100px;
-    margin-left: 16%;
+    /* margin-right: 100px; */
+    margin-left: 12%;
     margin-bottom: 48px;
 }
 
 .mar1 {
-    margin-right: 40px;
-    margin-left: 14%;
+    margin-right: 12%;
+    margin-left: 12%;
     margin-bottom: 48px;
 }
 
@@ -299,7 +304,7 @@
 }
 
 .icon-fea {
-    padding: 26px;
+    padding: 24px;
     color: #fff;
     font-size: 32px;
 }
@@ -398,6 +403,14 @@
     margin-bottom: 0;
 }
 
+
+.mr-b-48 {
+    margin: 0 0 48px 0;
+}
+
+.flexrowreverse {
+    flex-direction: row-reverse !important;
+}
 
 .o_web_editor_Floats_02 {
     background-image: url(https://nvhung2.odoo.com/web_editor/shape/web_editor/Floats/02.svg?c1=%23878787&c2=%23878787&c3=%23202022&c5=%23202022);

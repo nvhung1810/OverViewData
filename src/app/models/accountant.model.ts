@@ -1,13 +1,17 @@
 export class Accountant {
-    public id: number;
+    public data1: any[];
     public date: string;
-    public fulldate: string;
-    public number: string;
-    public explain: string
-    public debt: number;
-    public have: number;
-    public money: number;
-    public exchange_rate: number;
-    public totalMoney: number;
-    public data: any[];
+    public data: [
+        {
+            date: string;
+            fulldate: string;
+            number: string;
+            explain: string
+            debt: number;
+            have: number;
+            money: number;
+            exchange_rate: number;
+        }
+    ]
+
 }

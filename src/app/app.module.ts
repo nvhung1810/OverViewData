@@ -32,6 +32,9 @@ import {CommonModule} from '@angular/common';
     import {InputMaskModule} from 'primeng/inputmask';
     import {DataViewModule} from 'primeng/dataview';
     import {GalleriaModule} from 'primeng/galleria';
+    import {TreeSelectModule} from 'primeng/treeselect';
+    import {ChipsModule} from 'primeng/chips';
+    import {MenubarModule} from 'primeng/menubar';
     // End primeng-angular
 
       // FontAwesome
@@ -46,12 +49,14 @@ import { AccountantCreateComponent } from './components/accountants/accountant-c
 import { AccountantEditComponent } from './components/accountants/accountant-edit/accountant-edit.component';
 import { AccountantListComponent } from './components/accountants/accountant-list/accountant-list.component';
 import { appRouters } from './app.router';
-import { LaythongtinService } from './service/laythongtin.service';
+import { LaythongtinService } from './service/laythongtin/laythongtin.service';
 import { FilterPipe } from './pipes/filter.pipe';
 import { HomeIntroduceComponent } from './components/domain/home/home-introduce/home-introduce.component';
 import { HomeViewComponent } from './components/domain/home/home-view/home-view.component';
 import { LoginComponent } from './components/domain/loginAndRegister/login/login.component';
 import { RegisterComponent } from './components/domain/loginAndRegister/register/register.component';
+import { ContactComponent } from './components/domain/contact/contact/contact.component';
+import { FooterComponent } from './components/footter/footer/footer.component';
 
 //  Kết thúc của mình 
 
@@ -71,6 +76,8 @@ import { RegisterComponent } from './components/domain/loginAndRegister/register
     HomeViewComponent,
     LoginComponent,
     RegisterComponent,
+    ContactComponent,
+    FooterComponent,
     // CarouselDemo
   ],
 
@@ -105,7 +112,11 @@ import { RegisterComponent } from './components/domain/loginAndRegister/register
     PasswordModule,
     InputMaskModule,
     DataViewModule,
-    GalleriaModule
+    GalleriaModule,
+    TreeSelectModule,
+    ChipsModule,
+    InputNumberModule,
+    MenubarModule
   ],
   providers: [
     LaythongtinService,

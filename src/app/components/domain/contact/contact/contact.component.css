@@ -1,3 +1,77 @@
+.all {
+    margin-top: 68px;
+}
+
+.header {
+    /* background-image: url('https://nvhung2.odoo.com/web/image/website.s_banner_default_image');
+    background-position: 50% -130px;
+    background-size: cover; */
+}
+
+.txt-header {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 24px 0 24px 18.5%;
+    /* background-color: rgba(0, 0, 0, 0.5) !important; */
+    color: #38383B;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.input-gr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    padding: 0;
+}
+
+.des-contact {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+
+.txt-input {
+    font-weight: 700;
+    margin-right: 18%;
+    width: 24px;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: end;
+    margin: 24px 24px 10% 0;
+    /* text-align: center; */
+}
+
+.btn-send {
+    background-color: #38383B;
+    color: #fff;
+    border: none;
+    width: 10%;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+}
+
+.contact-about {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.txt-contact-about {
+    padding-left: 14px;
+}
+
+
+/*  Luoi chuaw sau */
+
 .hea {
     background-color: #38383B;
     color: #fff;

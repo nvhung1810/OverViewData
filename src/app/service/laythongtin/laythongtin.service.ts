@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Accountant } from './../models/accountant.model';
+import { Accountant } from '../../models/accountant.model';
 import { Observable } from 'rxjs';
-import { fullTimeandTotalMoney } from '../models/fulltimeandtotalmoney.model';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +21,10 @@ export class LaythongtinService {
   getProduct(id: number): Observable<Accountant> {
     const UrlAPI = `${this.url}/${id}`;
     return this.http.get<Accountant>(UrlAPI);
+  }
 
+  addvalue(product: Accountant): Observable<Accountant> {
+    return this.http.post<Accountant>(this.url, product);
   }
 
 }

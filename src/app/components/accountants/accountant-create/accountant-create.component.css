@@ -19,10 +19,16 @@
     margin-bottom: 20px;
 }
 
-.input-wrap {
-    display: flex;
-    align-items: center;
+.input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
 }
+
+.input-wrap {
+    width: 100%;
+}
+
 
 /* Mobile && Tablet */
 @media (max-width: 1023px) {
@@ -43,7 +49,7 @@
 }
 
 .btn-add {
-    margin: 20px 0 0 16px;
+    margin: 20px 0 0 8%;
 }
 
 .create-wrap {

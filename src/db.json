@@ -1,0 +1,205 @@
+[
+  {
+   "data1": [
+    {
+     "date": "01/01/21",
+     "number": "",
+     "explain": "Công ty XNK Đà Nẵng thuê văn phòng",
+     "debt": 13111,
+     "have": 5113,
+     "money": 349000000,
+     "exchange_rate": 1,
+     "id": 1
+    },
+    {
+     "date": "01/01/21",
+     "number": "",
+     "explain": "Công ty XNK Đà Nẵng thuê văn phòng",
+     "debt": 13111,
+     "have": 33311,
+     "money": 34900000,
+     "exchange_rate": 1,
+     "id": 2
+    },
+    {
+     "date": "01/01/21",
+     "number": "DKHT",
+     "explain": "Chi phí thuê văn phòng và thuê cây cảnh",
+     "debt": 6423,
+     "have": 2421,
+     "money": 375000,
+     "exchange_rate": 1,
+     "id": 3
+    },
+    {
+     "date": "01/01/21",
+     "number": "DKHT",
+     "explain": "Chi phí thuê văn phòng và thuê cây cảnh",
+     "debt": 642111,
+     "have": 1111,
+     "money": 500000,
+     "exchange_rate": 1,
+     "id": 4
+    }
+   ]
+  }
+]
+  {
+   "data2": [
+    {
+     "date": "02/01/21",
+     "number": "BC0121-001",
+     "explain": "Vay tiền theo khế ước",
+     "debt": 1121,
+     "have": 34111,
+     "money": 108459000000,
+     "exchange_rate": 1,
+     "id": 5
+    },
+    {
+     "date": "02/01/21",
+     "number": "NM-01/21-001",
+     "explain": "Phiếu mua hàng của Công ty TNHH Tiến Bộ ngày 02/01/21",
+     "debt": 1531,
+     "have": 3311,
+     "money": 4500000,
+     "exchange_rate": 1,
+     "id": 6
+    },
+    {
+     "date": "02/01/21",
+     "number": "NM-01/21-001",
+     "explain": "Phiếu mua hàng của Công ty TNHH Tiến Bộ ngày 02/01/21",
+     "debt": 1531,
+     "have": 3311,
+     "money": 90000,
+     "exchange_rate": 1,
+     "id": 7
+    },
+    {
+     "date": "02/01/21",
+     "number": "NM-01/21-001",
+     "explain": "Phiếu mua hàng của Công ty TNHH Tiến Bộ ngày 02/01/21",
+     "debt": 1531,
+     "have": 3311,
+     "money": 90000,
+     "exchange_rate": 1,
+     "id": 8
+    },
+    {
+     "date": "02/01/21",
+     "number": "PK01/21-001",
+     "explain": "Hóa đơn tiền tàu xe + nhà nghỉ đi công tác",
+     "debt": 6411,
+     "have": 1411,
+     "money": 8120000,
+     "exchange_rate": 1,
+     "id": 9
+    }
+   ]
+  },
+  {
+   "fulldate": "03/01/2021",
+   "totalMoney": 1026000,
+   "data": [
+    {
+     "date": "03/01/21",
+     "number": "NM-01/21-002",
+     "explain": "Phiếu mua hàng của Công ty TNHH Tiến Bộ ngày 03/01/21",
+     "debt": 1531,
+     "have": 3311,
+     "money": 360000,
+     "exchange_rate": 1,
+     "id": 9
+    },
+    {
+     "date": "03/01/21",
+     "number": "NM-01/21-002",
+     "explain": "Phiếu mua hàng của Công ty TNHH Tiến Bộ ngày 03/01/21",
+     "debt": 1531,
+     "have": 3311,
+     "money": 360000,
+     "exchange_rate": 1,
+     "id": 10
+    },
+    {
+     "date": "03/01/21",
+     "number": "NM-01/21-002",
+     "explain": "Phiếu mua hàng của Công ty TNHH Tiến Bộ ngày 03/01/21",
+     "debt": 1331,
+     "have": 3311,
+     "money": 306000,
+     "exchange_rate": 1,
+     "id": 11
+    }
+   ]
+  },
+  {
+   "fulldate": "04/01/2021",
+   "totalMoney": 457491038,
+   "data": [
+    {
+     "date": "04/01/21",
+     "number": "BN01/21-001",
+     "explain": "Chi tiền theo khế ước KU17/01-001",
+     "debt": 34111,
+     "have": 1121,
+     "money": 420952380,
+     "exchange_rate": 1,
+     "id": 9
+    },
+    {
+     "date": "04/01/21",
+     "number": "BN01/21-002",
+     "explain": "Trả tiền lãi theo khế ước KU17/01-001 tháng 01",
+     "debt": 6354,
+     "have": 1121,
+     "money": 31738658,
+     "exchange_rate": 1,
+     "id": 10
+    },
+    {
+     "date": "04/01/21",
+     "number": "PK01/21-002",
+     "explain": "Hóa đơn dịch vụ chuyển phát nhanh",
+     "debt": 6411,
+     "have": 1411,
+     "money": 4800000,
+     "exchange_rate": 1,
+     "id": 11
+    }
+   ]
+  },
+  {
+   "fulldate": "05/01/2021",
+   "totalMoney": 8889117,
+   "data": [
+    {
+     "date": "05/01/21",
+     "number": "01/21-001",
+     "explain": "Xuất văn phòng phẩm cho Bộ phận mua hàng",
+     "debt": 2421,
+     "have": 1531,
+     "money": 8889117,
+     "exchange_rate": 1,
+     "id": 9
+    }
+   ]
+  },
+  {
+   "fulldate": "06/01/2021",
+   "totalMoney": 60000000,
+   "data": [
+    {
+     "date": "06/01/21",
+     "number": "BN01/21-003",
+     "explain": "Nâng cao năng lực cho nhân viên nhân sự",
+     "debt": 6411,
+     "have": 1121,
+     "money": 60000000,
+     "exchange_rate": 1,
+     "id": 9
+    }
+   ]
+  }
+ ]

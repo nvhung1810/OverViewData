@@ -1,0 +1,28 @@
+<div class="all animate__animated animate__fadeIn">
+    <div class="header">
+       <span class="txt-header">Contact Us</span>
+    </div>
+    <div class="container-contact" *ngFor="let item of _ContactChildvalue">
+        <div class="grid p-fluid col-md-5" *ngFor="let value of item.data1">
+            <div class="des-contact">{{value.desciption}}</div>
+            <div class="col-12 md:col-4 input-gr" *ngFor="let valuechild of value.data1children">
+                <div class="Username txt-input">{{valuechild.title}}</div>
+                <div class="p-inputgroup">
+                    <input type="text" pInputText>         
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <button pButton pRipple type="button"
+                class="p-button-outlined p-button-rounded p-button btn-send">SEND</button>    
+            </div>
+        </div>
+        <div class="grid p-fluid col-md-2" style="margin-left: 6%;" *ngFor="let value2 of item.data2">
+            <div class="des-contact">{{value2.desciption}}</div>
+           <div class="contact-about" *ngFor="let valuechild2 of value2.data2children">
+                <i class="{{valuechild2.iconuse}}"></i>
+                <div class="txt-contact-about">{{valuechild2.desciption}}</div>
+           </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

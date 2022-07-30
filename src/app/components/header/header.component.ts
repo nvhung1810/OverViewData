@@ -13,4 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onScroll() {
+    alert('Scroll to top');
+  }
+
 }

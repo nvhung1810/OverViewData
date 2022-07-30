@@ -1,79 +1,82 @@
-<div class="content-section introduction">
-    <div class="feature-intro" style="margin: 32px">
-        <h1>Add new accounting information</h1>
-        <p>Added new accounting information including date, number, explanation, amount credit, amount owed, total amount and rate</p>
-    </div>
-</div>
-<hr style="margin-bottom: 48px">
-
-<div class="create-form">
-    <div class="create-wrap">
-        <div class="input-group-me">
-            <div class="input-wrap hide-on-mobile">
-                <div class="input-group col-md-3 mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-calendar"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Date" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group col-md-3 mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hashtag"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Number" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group col-md-3 mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-audio-description"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Description" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-            </div>
-            <div class="input-wrap hide-on-mobile">
-                <div class="input-group col-md-3 mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hand-holding-dollar"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Have" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group col-md-3 mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-circle-xmark"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Debt" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group col-md-3 mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-dollar-sign"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Money" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-            </div>
-            <div class="input-wrap hide-on-mobile">
-                <div class="input-group col-md-3 mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-arrows-rotate"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Exchange rate" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
+<div class="all-wrap animate__animated animate__fadeIn" *ngFor="let item of _ContactChildvalue">
+    <div class="create-wrap-all" *ngFor="let data of item.data1">
+        <div class="content-section introduction">
+            <div class="feature-intro" style="margin: 120px 32px 32px 32px">
+                <h1>{{data.header}}</h1>
+                <p>{{data.desciption2}}</p>
             </div>
         </div>
-        <button type="button" class="btn btn-secondary btn-add" style="margin-bottom: 48px">ADD</button>
+        <hr style="margin-bottom: 48px">
+        
+        <div class="create-form" style="margin-bottom: 4%;">
+            <div class="create-wrap col-md-9">
+                <div class="input-group-me">
+                    <div class="input-wrap hide-on-mobile" style="margin-bottom: 32px; margin-left: 8%;">
+                        <div class="row">
+                            <!-- phần date -->
+                            <div class="p-inputgroup col-md-5" *ngFor="let data2 of item.data2" style="margin-bottom: 38px;">
+                                <span style="width: 44px;" class="input-group-text" id="basic-addon1"><i class="{{data2.iconuse}}"></i></span>
+                                <span class="p-float-label">
+                                    <p-calendar inputId="integeronly" [(ngModel)]="_Accountant.date"></p-calendar> 
+                                    <label for="inputtext">{{data2.placeholder}}</label>
+                                </span>        
+                            </div>
+                            <!-- phần số và diễn giải -->
+                            <div class="p-inputgroup col-md-5" *ngFor="let data3 of item.data3" style="margin-bottom: 38px;">
+                                <span style="width: 44px;" class="input-group-text" id="basic-addon1"><i class="{{data3.iconuse}}"></i></span>
+                                <span class="p-float-label">
+                                    <p-chips inputId="integeronly" [(ngModel)]="_Accountant.number"></p-chips> 
+                                    <label for="inputtext">{{data3.placeholder}}</label>
+                                </span>       
+                            </div>
+                            <div class="p-inputgroup col-md-5" *ngFor="let data3 of item.data3" style="margin-bottom: 38px;">
+                                <span style="width: 44px;" class="input-group-text" id="basic-addon1"><i class="{{data3.iconuse2}}"></i></span>
+                                <span class="p-float-label">
+                                    <p-chips inputId="integeronly" [(ngModel)]="_Accountant.explain"></p-chips> 
+                                    <label for="inputtext">{{data3.placeholder2}}</label>
+                                </span>       
+                            </div>
+                            <!-- các phần còn lại -->
+                            <!-- debt -->
+                            <div class="p-inputgroup col-md-5" *ngFor="let data4 of item.data4" style="margin-bottom: 38px;">
+                                <span style="width: 44px;" class="input-group-text" id="basic-addon1"><i class="{{data4.iconuse}}"></i></span>
+                                <span class="p-float-label">
+                                    <p-inputNumber inputId="integeronly" [(ngModel)]="_Accountant.debt"></p-inputNumber> 
+                                    <label for="inputtext">{{data4.placeholder}}</label>
+                                </span>       
+                            </div>
+                            <!-- have -->
+                            <div class="p-inputgroup col-md-5" *ngFor="let data4 of item.data4" style="margin-bottom: 38px;">
+                                <span style="width: 44px;" class="input-group-text" id="basic-addon1"><i class="{{data4.iconuse2}}"></i></span>
+                                <span class="p-float-label">
+                                    <p-inputNumber inputId="integeronly" [(ngModel)]="_Accountant.have"></p-inputNumber> 
+                                    <label for="inputtext">{{data4.placeholder2}}</label>
+                                </span>       
+                            </div>
+                            <!-- money -->
+                            <div class="p-inputgroup col-md-5" *ngFor="let data4 of item.data4" style="margin-bottom: 38px;">
+                                <span style="width: 44px;" class="input-group-text" id="basic-addon1"><i class="{{data4.iconuse3}}"></i></span>
+                                <span class="p-float-label">
+                                    <p-inputNumber inputId="integeronly" [(ngModel)]="_Accountant.money"></p-inputNumber> 
+                                    <label for="inputtext">{{data4.placeholder3}}</label>
+                                </span>       
+                            </div>
+                            <!-- exchange_rate -->
+                            <div class="p-inputgroup col-md-5" *ngFor="let data4 of item.data4" style="margin-bottom: 38px;">
+                                <span style="width: 44px;" class="input-group-text" id="basic-addon1"><i class="{{data4.iconuse4}}"></i></span>
+                                <span class="p-float-label">
+                                    <p-inputNumber inputId="integeronly" [(ngModel)]="_Accountant.exchange_rate"></p-inputNumber> 
+                                    <label for="inputtext">{{data4.placeholder4}}</label>
+                                </span>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary btn-add" style="margin-bottom: 48px" (click)="onAddValue()">ADD</button>
+            </div>
+        </div>
     </div>
+    <app-footer></app-footer>
 </div>
 
 
-<!-- <div class="content-section documentation">
-    <p-tabView>
-        <p-tabPanel header="inputgroupdemo.html">
-
-        </p-tabPanel>
-        
-        <p-tabPanel header="inputgroupdemo.ts">
-
-        </p-tabPanel>
-        <p-tabPanel header="StackBlitz">
-          
-        </p-tabPanel>
-    </p-tabView>
-</div> -->

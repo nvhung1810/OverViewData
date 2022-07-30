@@ -1,18 +1,16 @@
-<p class="txt_account animate__fadeInDown">Accounting Information</p>
+<div class="wrap animate__animated animate__fadeIn">
+  <p class="txt_account">Accounting Information</p>
 <div class="nav">
-  <button type="button" class="btn btn-primary btn-create" data-toggle="button" aria-pressed="false" autocomplete="off"
+  <button type="button" class="btn btn-create" data-toggle="button" aria-pressed="false" autocomplete="off"
   [routerLink]="['/accountants/add']"
   >CREATE</button>
-  <!--  -->
-  <!-- <div class="abc col-md-1">
-    <select class="custom-select">
-      <option selected>Filter</option>
-      <option value="1">Tăng Dần</option>
-      <option value="2">Giảm Dần</option>
-    </select>
-  </div> -->
-  <!--  -->
 </div>
+<p-menubar [model]="items">
+  <ng-template pTemplate="end">
+     
+  </ng-template>
+</p-menubar>
+
 <section>
 <div class="table-responsive text-nowrap">
     <!--Table-->
@@ -29,7 +27,7 @@
             <th rowspan="2" class="editTable col-md-1">Tỉ Giá</th>
         </tr>
         <tr>
-            <th class="editTable col-md-1">Ngày</th>
+            <th class="editTable col-md-1">Ngày Tạo</th>
             <th class="editTable col-md-1">Số</th>
             <th class="editTable col-md-1">Nợ</th>
             <th class="editTable col-md-1">Có</th>
@@ -59,23 +57,25 @@
           </th>
       </tr>
       </thead>
-      
       <!--Table head-->
 
       <!--Table body-->
-      <tbody *ngFor="let item of _Accountant" class="animate__animated animate__fadeInDown">
+      <tbody *ngFor="let item of _Accountant">
         <tr>
           <td class="editTable1 table-background txt-time" colspan="6">
             <i class="fa-solid fa-angle-right"></i>
-            {{item.fulldate}}
+            {{item.date}}
           </td>
-          <th class="editTable1 table-background">{{item.totalMoney | number: '1.0-3'}}</th>
+          <th class="editTable1 table-background">
+          </th>
           <td class="editTable1 table-background"></td>
         </tr>
-        <tr *ngFor="let value of item.data | filterAcc : dateFilter :
-            numberFilter : explainFilter : debtFilter :
-            haveFilter : moneyFilter : exchange_rateFilter ; let i = index ">
-          <th class="editTable1">{{i+1}}</th>
+        <tr  *ngFor="let value of item.data1 | filterAcc : dateFilter :
+              numberFilter : explainFilter : debtFilter :
+              haveFilter : moneyFilter : exchange_rateFilter ; let i = index">
+          <th class="editTable1">
+            <input type="checkbox">
+          </th>
           <td class="editTable1">{{value.date}}</td>
           <td class="editTable1">{{value.number}}</td>
           <td class="editTable1">{{value.explain}}</td>
@@ -86,9 +86,8 @@
         </tr>
       </tbody>
       <!--Table body-->
-
-
     </table>
     <!--Table-->
   </div>
 </section>
+</div>

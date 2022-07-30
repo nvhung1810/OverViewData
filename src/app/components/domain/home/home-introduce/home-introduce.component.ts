@@ -11,7 +11,7 @@ import { ValueInHome } from 'src/app/models/home/valueinhome.model'; // sửa th
   templateUrl: './home-introduce.component.html',
   styleUrls: ['./home-introduce.component.css']
 })
-export class HomeIntroduceComponent implements OnInit {
+export class HomeIntroduceComponent implements OnInit, OnDestroy{
     public value: any;
 
     public _Subscription: Subscription;

@@ -24,6 +24,8 @@
 
 .btn-create {
     margin: 24px;
+    background-color: #383838;
+    color: #fff;
 }
 
 .txt_account {
@@ -34,8 +36,9 @@
 }
 
 .table-background {
-    background-color: #CCE8FF;
+    background-color: #e0e2e3;
 }
+
 
 .txt-time {
     text-align: left;

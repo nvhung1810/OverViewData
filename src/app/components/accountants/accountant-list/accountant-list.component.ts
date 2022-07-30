@@ -1,12 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { LaythongtinService } from 'src/app/service/laythongtin.service';
+import { LaythongtinService } from 'src/app/service/laythongtin/laythongtin.service';
 import { Subscription } from 'rxjs';
 import { Accountant } from 'src/app/models/accountant.model';
-import { fullTimeandTotalMoney } from 'src/app/models/fulltimeandtotalmoney.model';
 import { FormControl } from '@angular/forms';
 import { FilterPipe } from 'src/app/pipes/filter.pipe';
 import { PrimeNGConfig } from 'primeng/api';
-
+import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-accountant-list',
@@ -18,7 +17,6 @@ export class AccountantListComponent implements OnInit, OnDestroy {
   public _Subscription: Subscription;
   public _Accountant: Accountant[] = [];
   public _AccountantValue: Accountant[] = [];
-  public _fullTimeandTotalMoney: fullTimeandTotalMoney[] = [];
   public _total: number = 0;
   public _total1: number = 0;
   public _totalArray: number[] = [];
@@ -42,32 +40,61 @@ export class AccountantListComponent implements OnInit, OnDestroy {
     private primengConfig: PrimeNGConfig
   ) { }
 
+  items: MenuItem[];
+
   ngOnInit(): void {
     this.onGetValue();
     this.primengConfig.ripple = true;
+    this.items = [
+        {
+          label:'Edit',
+          icon:'pi pi-fw pi-pencil',
+          items:[
+              {
+                  label:'Left',
+                  icon:'pi pi-fw pi-align-left'
+              },
+              {
+                  label:'Right',
+                  icon:'pi pi-fw pi-align-right'
+              },
+              {
+                  label:'Center',
+                  icon:'pi pi-fw pi-align-center'
+              },
+              {
+                  label:'Justify',
+                  icon:'pi pi-fw pi-align-justify'
+              },
+
+          ]
+      },
+      {
+          label:'Bộ Lọc',
+          icon:'pi pi-fw pi-filter'
+      },
+      {
+          label:'Events',
+          icon:'pi pi-fw pi-calendar',
+          items:[
+              
+                  {
+                      label:'Save',
+                      icon:'pi pi-fw pi-calendar-plus'
+                  },
+                  {
+                      label:'Delete',
+                      icon:'pi pi-fw pi-calendar-minus'
+                  }
+                ]
+      }
+  ];
   }
 
   onGetValue() {
     this._Subscription = this._LaythongtinService.getAllValuses().subscribe((data: Accountant[]) => {
       this._Accountant = data;
-      for(let i = 0; i < this._Accountant.length; i++) {
-        for(let j = 0; j < this._Accountant[i].data.length; j++) {
-          this._money += this._Accountant[i].data[j].money;
-        }
-        this._totalArray.push(this._money);
-      }
-
-      for(let item = 1; item < this._totalArray.length; ++item) {
-        if(item == 1) {
-          this._totalArray1.push(this._totalArray[0]);
-        }
-        this._total = this._totalArray[item] - this._totalArray[item-1];
-        console.log(this._total);
-        this._totalArray1.push(this._total);
-      }
-      console.log(this._totalArray1);
-      // console.log(this._Accountant);
-      // Array.prototype.splice.apply(this._Accountant, [0, this._totalArray1.length].concat(_totalArray1));
+      console.log(this._Accountant);
     })
   }
 
@@ -77,5 +104,7 @@ export class AccountantListComponent implements OnInit, OnDestroy {
     }
 
   }
+
+
 
 }

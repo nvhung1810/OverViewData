@@ -1,0 +1,47 @@
+<div class="footer animate__animated animate__fadeIn" *ngFor="let valueall of _ValueInHome">
+    <div class="product-footer product-footer-fix pl-none row mr-b-none" 
+    style="background-color: #38383B; padding-top: 48px;"
+    *ngFor="let value11 of valueall.data11">
+    <!--  -->
+        <div class="col-md-3 mr-t">
+            <div class="feature-des">
+                <div class="feature-des-hea col-white txt-algn">{{value11.header}}</div>
+            </div>
+            <ul style="color: #fff; margin: 20px 0 48px 0;">
+                <li style="padding-top: 8px;">{{value11.desciption}}</li>
+                <li style="padding-top: 8px;">{{value11.desciption1}}</li>
+                <li style="padding-top: 8px;">{{value11.desciption2}}</li>
+            </ul>
+        </div>
+        <!--  -->
+        <div class="col-md-6 mr-t col-md-9-tab">
+            <div class="feature-des-txt col-white txt-algn">{{value11.desciption3}}</div>
+            <div class="ul-wrap remove-flex">
+                <ul style="color: #fff; margin: 20px 0 48px 0; list-style: none; padding: 0;">
+                    <li style="padding-top: 8px;">
+                        <i class="{{value11.phoneicon}}"></i>
+                        <a href="{{value11.phone}}"  style="color: #fff; text-decoration: none; ">{{value11.phone}}</a>
+                    </li>
+                    <li style="padding-top: 8px;">
+                        <i class="{{value11.emailicon}}"></i>
+                        <a href="{{value11.email}}"  style="color: #fff; text-decoration: none; ">{{value11.email}}</a>
+                    </li>
+                </ul>
+                
+                <ul style="color: #fff; margin: 20px 0 48px 0; list-style: none; padding: 0;">
+                    <li style="padding-top: 8px; display: flex;" class="dis-flex">
+                        <a href="" class="logo-link facebook">
+                            <i class="{{value11.facebook}}"></i>
+                        </a>
+                        <a href="" class="logo-link twitter">
+                            <i class="{{value11.twitter}}"></i>
+                        </a>
+                        <a href="" class="logo-link insta">
+                            <i class="{{value11.instagram}}"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

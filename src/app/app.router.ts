@@ -12,6 +12,7 @@ import { HomeIntroduceComponent } from './components/domain/home/home-introduce/
 import { HomeViewComponent } from './components/domain/home/home-view/home-view.component';
 import { LoginComponent } from './components/domain//loginAndRegister/login/login.component';
 import { RegisterComponent } from './components/domain/loginAndRegister/register/register.component';
+import { ContactComponent } from './components/domain/contact/contact/contact.component';
 // 
 export const appRouters: Routes = [
     {
@@ -35,6 +36,10 @@ export const appRouters: Routes = [
                 component: AccountantCreateComponent
             },
         ]
+    },
+    {
+        path: 'contact',
+        component: ContactComponent,
     },
     {
         path: 'register',
